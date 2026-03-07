@@ -48,18 +48,22 @@ nav {
 .hamburger span { display: block; width: 20px; height: 1.5px; background: var(--dark); border-radius: 2px; }
 
 /* HERO */
-.hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; background: linear-gradient(175deg, #fafafa 0%, #ebebef 100%); padding: calc(var(--nav-h) + 80px) 24px 100px; position: relative; overflow: hidden; }
-.hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 70% 50% at 50% 25%, rgba(0,113,227,0.07) 0%, transparent 70%); }
-.hero-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 22px; opacity: 0; animation: fadeUp 0.8s var(--ease) 0.1s forwards; }
-.hero-h1 { font-family: var(--serif); font-size: clamp(54px, 9vw, 104px); font-weight: 400; line-height: 1.0; letter-spacing: -0.04em; max-width: 880px; opacity: 0; animation: fadeUp 0.9s var(--ease) 0.22s forwards; }
+.hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; background: #f5f5f7; overflow: hidden; }
+.hero-left { display: flex; flex-direction: column; justify-content: center; padding: calc(var(--nav-h) + 60px) 64px 80px; }
+.hero-right { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr; gap: 4px; overflow: hidden; }
+.hero-right img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s ease; }
+.hero-right img:hover { transform: scale(1.04); }
+.hero-right img:first-child { grid-row: span 2; }
+.hero-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 22px; opacity: 0; animation: fadeUp 0.8s var(--ease) 0.1s forwards; text-align: left; }
+.hero-h1 { font-family: var(--serif); font-size: clamp(44px, 6vw, 86px); font-weight: 400; line-height: 1.0; letter-spacing: -0.04em; max-width: 880px; opacity: 0; animation: fadeUp 0.9s var(--ease) 0.22s forwards; text-align: left; }
 .hero-h1 em { font-style: italic; color: var(--mid-gray); }
-.hero-sub { font-size: clamp(16px, 2.2vw, 20px); color: var(--mid-gray); max-width: 500px; line-height: 1.65; margin-top: 28px; font-weight: 300; opacity: 0; animation: fadeUp 0.9s var(--ease) 0.38s forwards; }
-.hero-btns { display: flex; gap: 12px; margin-top: 48px; flex-wrap: wrap; justify-content: center; opacity: 0; animation: fadeUp 0.9s var(--ease) 0.5s forwards; }
+.hero-sub { font-size: clamp(16px, 2.2vw, 20px); color: var(--mid-gray); max-width: 500px; line-height: 1.65; margin-top: 28px; font-weight: 300; opacity: 0; animation: fadeUp 0.9s var(--ease) 0.38s forwards; text-align: left; }
+.hero-btns { display: flex; gap: 12px; margin-top: 48px; flex-wrap: wrap; justify-content: flex-start; opacity: 0; animation: fadeUp 0.9s var(--ease) 0.5s forwards; }
 .btn-dark { background: var(--dark); color: #fff; padding: 13px 26px; border-radius: 980px; font-size: 15px; font-weight: 500; text-decoration: none; transition: transform 0.2s, background 0.2s; }
 .btn-dark:hover { background: #3a3a3c; transform: scale(1.02); }
 .btn-ghost { background: transparent; color: var(--accent); padding: 13px 26px; border-radius: 980px; font-size: 15px; font-weight: 500; text-decoration: none; border: 1.5px solid rgba(0,113,227,0.35); transition: all 0.2s; }
 .btn-ghost:hover { border-color: var(--accent); transform: scale(1.02); }
-.hero-img { width: min(260px, 52vw); border-radius: 20px; box-shadow: 0 50px 100px rgba(0,0,0,0.2); margin-top: 64px; object-fit: cover; aspect-ratio: 3/4; opacity: 0; animation: fadeUp 1s var(--ease) 0.65s forwards; }
+
 
 /* QUOTE */
 .quote { background: var(--dark); padding: 88px 24px; text-align: center; }
@@ -243,14 +247,22 @@ footer p { font-size: 12px; color: var(--mid-gray); }
 
 <!-- HERO -->
 <section class="hero">
-  <p class="hero-eyebrow">The Paintings of Ron Levy</p>
-  <h1 class="hero-h1">Music.<br><em>Landscape.</em><br>Memory.</h1>
-  <p class="hero-sub">A self-taught painter. Pianist. A life redrawn — stroke by stroke — beginning in the middle of a pandemic.</p>
-  <div class="hero-btns">
-    <a href="#gallery" class="btn-dark">Explore all works</a>
-    <a href="#about" class="btn-ghost">Read the story</a>
+  <div class="hero-left">
+    <p class="hero-eyebrow">The Paintings of Ron Levy</p>
+    <h1 class="hero-h1">Music.<br><em>Landscape.</em><br>Memory.</h1>
+    <p class="hero-sub">A self-taught painter. Pianist. A life redrawn — stroke by stroke — beginning in the middle of a pandemic.</p>
+    <div class="hero-btns">
+      <a href="#gallery" class="btn-dark">Explore all works</a>
+      <a href="#about" class="btn-ghost">Read the story</a>
+    </div>
   </div>
-  <img class="hero-img" src="Ron%20Levy%20%E2%80%94%20Paintings_files/main-picture-576x1024.jpeg" alt="Ron Levy" loading="lazy">
+  <div class="hero-right">
+    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Sol-Gabetta-756x1024-640x480.jpeg" alt="Sol Gabetta" loading="eager">
+    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-5-1024x790-640x480.jpeg" alt="Interior" loading="eager">
+    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Sea-Abstract-2-1007x1024-640x480.jpeg" alt="Sea of Galilee" loading="eager">
+    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-09-27-at-22.52.55-1-731x1024-640x480.jpeg" alt="Figure" loading="eager">
+    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.54.58-1005x1024-640x480.jpeg" alt="Jerusalem" loading="eager">
+  </div>
 </section>
 
 <!-- QUOTE -->
@@ -268,7 +280,7 @@ footer p { font-size: 12px; color: var(--mid-gray); }
     <p>As a musician who started studying cello at eight, he sought something entirely foreign. Within weeks he was painting on canvas — trees, clouds, water, reflections. Several hours every day.</p>
   </div>
   <div class="story-photo">
-    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/cropped-20250107_001818-scaled-1.jpg" alt="Ron Levy">
+    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/main-picture-576x1024.jpeg" alt="Ron Levy">
   </div>
 </div>
 
@@ -428,7 +440,7 @@ footer p { font-size: 12px; color: var(--mid-gray); }
 <section class="sec" id="about" style="background:var(--white)">
   <div class="about-inner">
     <div class="about-img rv">
-      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/cropped-20250107_001818-scaled-1.jpg" alt="Ron Levy">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/main-picture-576x1024.jpeg" alt="Ron Levy">
       <div class="about-badge"><strong>2020</strong><small>Painting began</small></div>
     </div>
     <div class="rv">
