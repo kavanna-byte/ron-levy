@@ -105,11 +105,12 @@
     .tab:hover:not(.on) { background: rgba(0,0,0,0.05); }
     .tab.on { background: var(--dark); color: white; border-color: var(--dark); }
     .g-grid { max-width: 1240px; margin: 0 auto; columns: 5; column-gap: 10px; padding: 0 20px; }
-    .gi { break-inside: avoid; margin-bottom: 10px; cursor: pointer; position: relative; overflow: hidden; border-radius: 8px; background: #ddd; }
-    .gi img { width: 100%; display: block; transition: transform 0.5s var(--ease); }
+    .gi { break-inside: avoid; margin-bottom: 10px; cursor: pointer; position: relative; overflow: hidden; border-radius: 8px; background: #ddd; min-height: 120px; }
+    .gi img { width: 100%; display: block; transition: transform 0.5s var(--ease); min-height: 120px; object-fit: cover; }
     .gi:hover img { transform: scale(1.04); }
     .gi-cap { position: absolute; bottom: 0; left: 0; right: 0; padding: 24px 10px 8px; background: linear-gradient(transparent, rgba(0,0,0,0.6)); color: white; font-size: 10.5px; font-weight: 500; letter-spacing: 0.02em; opacity: 0; transition: opacity 0.3s; }
     .gi:hover .gi-cap { opacity: 1; }
+    .gi img[src=""], .gi img:not([src]) { min-height: 160px; }
 
     /* ABOUT */
     .about { max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: 1fr 3fr; gap: 80px; align-items: center; }
@@ -151,6 +152,8 @@
     /* RESPONSIVE */
     @media (max-width: 960px) {
       .hero { grid-template-columns: 1fr; }
+      .tab-bar { flex-wrap: wrap; gap: 4px; }
+      .tab { font-size: 11px; padding: 6px 12px; }
       .hero-right { height: 50vw; }
       .hero-left { padding: 100px 32px 48px; }
       .story { grid-template-columns: 1fr; }
@@ -166,7 +169,11 @@
       .g-grid { columns: 2; }
       .story-copy { padding: 56px 32px; }
     }
-    @media (max-width: 480px) { .g-grid { columns: 2; } }
+    @media (max-width: 480px) {
+      .g-grid { columns: 1; padding: 0 12px; }
+      .gi { min-height: 200px; }
+      .gi img { min-height: 200px; }
+    }
   </style>
 </head>
 <body>
@@ -415,6 +422,14 @@
       <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Thats-All-There-Is-E.-Mohar-Y.-Rechter-1024x1020-640x480.jpeg" data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Thats-All-There-Is-E.-Mohar-Y.-Rechter-1024x1020-640x480.jpeg" alt="That's All There Is" loading="lazy">
       <div class="gi-cap">That's All There Is — E. Mohar / Y. Rechter</div>
     </div>
+    <div class="gi" data-cat="songs" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Saturday-Morning-T.-AtarY.-Rechter-1013x1024-640x480.jpeg" data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Saturday-Morning-T.-AtarY.-Rechter-1013x1024-640x480.jpeg" alt="Saturday Morning" loading="lazy">
+      <div class="gi-cap">Saturday Morning — T. Atar / Y. Rechter</div>
+    </div>
+    <div class="gi" data-cat="songs" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/The-Goldfish-L.-GoldbergY.-Rechter-1024x1024-640x480.jpeg" data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/The-Goldfish-L.-GoldbergY.-Rechter-1024x1024-640x480.jpeg" alt="The Goldfish" loading="lazy">
+      <div class="gi-cap">The Goldfish — L. Goldberg / Y. Rechter</div>
+    </div>
 
     <!-- ── JERUSALEM — CHILDHOOD (8) ── -->
     <div class="gi" data-cat="jerusalem" onclick="lbOpen(this)">
@@ -530,11 +545,11 @@
       <div class="gi-cap">Interior with View II</div>
     </div>
     <div class="gi" data-cat="interior" onclick="lbOpen(this)">
-      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-4-1024x802-640x480.jpeg" data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-4-1024x802-640x480.jpeg" alt="Interior with View III" loading="lazy">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-4-1024x805-640x480.jpeg" data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-4-1024x805-640x480.jpeg" alt="Interior with View III" loading="lazy">
       <div class="gi-cap">Interior with View III</div>
     </div>
     <div class="gi" data-cat="interior" onclick="lbOpen(this)">
-      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-3-1024x802-640x480.jpeg" data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-3-1024x802-640x480.jpeg" alt="Interior with View IV" loading="lazy">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-3-1024x869-640x480.jpeg" data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-3-1024x869-640x480.jpeg" alt="Interior with View IV" loading="lazy">
       <div class="gi-cap">Interior with View IV</div>
     </div>
     <div class="gi" data-cat="interior" onclick="lbOpen(this)">
@@ -542,11 +557,10 @@
       <div class="gi-cap">Interior with View V</div>
     </div>
     <div class="gi" data-cat="interior" onclick="lbOpen(this)">
-      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-1-1024x802-640x480.jpeg" data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-1-1024x802-640x480.jpeg" alt="Interior with View VI" loading="lazy">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-1024x800-640x480.jpeg" data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-1024x800-640x480.jpeg" alt="Interior with View VI" loading="lazy">
       <div class="gi-cap">Interior with View VI</div>
     </div>
-
-    <!-- ── INTERIOR — WITHOUT VIEW (1) ── -->
+    <!-- ── INTERIOR — WITHOUT VIEW ── -->
     <div class="gi" data-cat="interior" onclick="lbOpen(this)">
       <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-without-view-1024x814-640x480.jpeg" data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-without-view-1024x814-640x480.jpeg" alt="Interior without View" loading="lazy">
       <div class="gi-cap">Interior without View</div>
