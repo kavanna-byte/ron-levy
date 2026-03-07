@@ -72,8 +72,6 @@ nav {
 
 /* STORY */
 .story { display: grid; grid-template-columns: 1fr 1fr; }
-.story--text-only { display: block; background: var(--off-white); }
-.story--text-only .story-copy { max-width: 680px; margin: 0 auto; padding: 88px 24px; }
 .story-copy { background: var(--off-white); padding: 96px 72px; display: flex; flex-direction: column; justify-content: center; }
 .label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
 .story-copy h2 { font-family: var(--serif); font-size: clamp(28px, 3.5vw, 44px); font-weight: 400; letter-spacing: -0.03em; line-height: 1.15; }
@@ -274,12 +272,15 @@ footer p { font-size: 12px; color: var(--mid-gray); }
 </div>
 
 <!-- STORY -->
-<div class="story story--text-only">
+<div class="story">
   <div class="story-copy rv">
     <p class="label">The Beginning</p>
     <h2>A blank canvas<br>at seventy</h2>
     <p>Inspired by Professor Yoram Yovell's lecture on preserving cognitive vitality, Ron Levy picked up a pencil for the first time — secretly tracing diagonal lines on plain paper. He had never sketched, never held a brush.</p>
     <p>As a musician who started studying cello at eight, he sought something entirely foreign. Within weeks he was painting on canvas — trees, clouds, water, reflections. Several hours every day.</p>
+  </div>
+  <div class="story-photo">
+    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/20250106_130034-1.jpg" alt="Emek Yizrael — one of Ron Levy's early landscapes">
   </div>
 </div>
 
