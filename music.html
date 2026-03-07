@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music — Ron Levy Paintings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="collection.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Ron Levy</a>
+  <ul class="nav-links">
+    <li><a href="music.html" class="active">Music</a></li>
+    <li><a href="jerusalem.html">My Jerusalem</a></li>
+    <li><a href="landscape.html">Landscape</a></li>
+    <li><a href="interior.html">Interior</a></li>
+    <li><a href="people.html">People</a></li>
+    <li><a href="index.html#about">About</a></li>
+  </ul>
+  <a href="index.html#contact" class="nav-cta">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section class="col-hero">
+  <div class="col-hero-left">
+    <p class="col-hero-eyebrow reveal">Collection I — Music</p>
+    <h1 class="col-hero-h1 reveal">Portraits of<br><em>Musicians.</em></h1>
+    <p class="col-hero-desc reveal">A series born from a life immersed in music — pianists, conductors, cellists, and vocalists painted with deep admiration and emotional intimacy.</p>
+    <div class="col-hero-meta reveal">
+      <span>🎵 Portraits · Duets · Instruments · Songs</span>
+      <span>📅 2021–2025</span>
+    </div>
+  </div>
+  <div class="col-hero-right" id="heroRight">
+    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Sol-Gabetta-756x1024-640x480.jpeg" alt="Sol Gabetta">
+    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Martha-Argerich-743x1024-640x480.jpeg" alt="Martha Argerich">
+    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Yuja-Wang-742x1024-640x480.jpeg" alt="Yuja Wang">
+    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Yo-Yo-Ma-731x1024-640x480.jpeg" alt="Yo-Yo Ma">
+    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Katia-Buniatishvili-768x1024-640x480.jpeg" alt="Katia Buniatishvili">
+  </div>
+</section>
+
+<!-- ANIMATED BANNER STRIP -->
+<div class="banner-strip" id="bannerStrip">
+  <div class="banner-strip-item" onclick="lbOpenByIdx(0)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Sol-Gabetta-756x1024-640x480.jpeg" alt="Sol Gabetta"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(1)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Yuja-Wang-742x1024-640x480.jpeg" alt="Yuja Wang"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(2)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Claudio-Abbado-744x1024-640x480.jpeg" alt="Claudio Abbado"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(3)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Martha-Argerich-743x1024-640x480.jpeg" alt="Martha Argerich"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(4)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Sergio-Celibidache-731x1024-640x480.jpeg" alt="Sergio Celibidache"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(5)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Fazil-Say-742x1024-640x480.jpeg" alt="Fazil Say"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(6)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Yo-Yo-Ma-731x1024-640x480.jpeg" alt="Yo-Yo Ma"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(7)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Katia-Buniatishvili-768x1024-640x480.jpeg" alt="Katia Buniatishvili"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(8)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Fatma-Said-751x1024-640x480.jpeg" alt="Fatma Said"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(9)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Yannick-Nezet-Seguin-732x1024-640x480.jpeg" alt="Yannick Nézet-Séguin"></div>
+</div>
+
+<!-- GALLERY -->
+<section class="gallery-sec">
+  <div class="back-bar">
+    <a href="index.html" class="back-link">← All Collections</a>
+  </div>
+  <div class="gallery-header">
+    <h2 class="reveal">All Music Works</h2>
+    <p class="reveal">Portraits · Duets · Instruments · Songs</p>
+  </div>
+
+  <div class="tabs">
+    <button class="tab on" onclick="filter('all',this)">All</button>
+    <button class="tab" onclick="filter('portraits',this)">Portraits</button>
+    <button class="tab" onclick="filter('duets',this)">Duets</button>
+    <button class="tab" onclick="filter('instruments',this)">Instruments</button>
+    <button class="tab" onclick="filter('songs',this)">Songs</button>
+  </div>
+
+  <div class="g-grid" id="gallery">
+
+    <!-- PORTRAITS (11) -->
+    <div class="gi" data-cat="portraits" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Sol-Gabetta-756x1024-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Sol-Gabetta-756x1024-640x480.jpeg"
+           alt="Sol Gabetta" loading="lazy">
+      <div class="gi-cap">Sol Gabetta</div>
+    </div>
+    <div class="gi" data-cat="portraits" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Yuja-Wang-742x1024-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Yuja-Wang-742x1024-640x480.jpeg"
+           alt="Yuja Wang" loading="lazy">
+      <div class="gi-cap">Yuja Wang</div>
+    </div>
+    <div class="gi" data-cat="portraits" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Claudio-Abbado-744x1024-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Claudio-Abbado-744x1024-640x480.jpeg"
+           alt="Claudio Abbado" loading="lazy">
+      <div class="gi-cap">Claudio Abbado</div>
+    </div>
+    <div class="gi" data-cat="portraits" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Katia-Buniatishvili-768x1024-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Katia-Buniatishvili-768x1024-640x480.jpeg"
+           alt="Katia Buniatishvili" loading="lazy">
+      <div class="gi-cap">Katia Buniatishvili</div>
+    </div>
+    <div class="gi" data-cat="portraits" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Fatma-Said-751x1024-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Fatma-Said-751x1024-640x480.jpeg"
+           alt="Fatma Said" loading="lazy">
+      <div class="gi-cap">Fatma Said</div>
+    </div>
+    <div class="gi" data-cat="portraits" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Yannick-Nezet-Seguin-732x1024-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Yannick-Nezet-Seguin-732x1024-640x480.jpeg"
+           alt="Yannick Nézet-Séguin" loading="lazy">
+      <div class="gi-cap">Yannick Nézet-Séguin</div>
+    </div>
+    <div class="gi" data-cat="portraits" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Martha-Argerich-743x1024-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Martha-Argerich-743x1024-640x480.jpeg"
+           alt="Martha Argerich" loading="lazy">
+      <div class="gi-cap">Martha Argerich</div>
+    </div>
+    <div class="gi" data-cat="portraits" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Sergio-Celibidache-731x1024-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Sergio-Celibidache-731x1024-640x480.jpeg"
+           alt="Sergio Celibidache" loading="lazy">
+      <div class="gi-cap">Sergio Celibidache</div>
+    </div>
+    <div class="gi" data-cat="portraits" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Fazil-Say-742x1024-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Fazil-Say-742x1024-640x480.jpeg"
+           alt="Fazil Say" loading="lazy">
+      <div class="gi-cap">Fazil Say</div>
+    </div>
+    <div class="gi" data-cat="portraits" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Yo-Yo-Ma-731x1024-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Yo-Yo-Ma-731x1024-640x480.jpeg"
+           alt="Yo-Yo Ma" loading="lazy">
+      <div class="gi-cap">Yo-Yo Ma</div>
+    </div>
+
+    <!-- SONGS (7) -->
+    <div class="gi" data-cat="songs" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Another-Awesome-Day-Y.-Levy-950x1024-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Another-Awesome-Day-Y.-Levy-950x1024-640x480.jpeg"
+           alt="Another Awesome Day" loading="lazy">
+      <div class="gi-cap">Another Awesome Day — Y. Levy</div>
+    </div>
+    <div class="gi" data-cat="songs" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Like-Sea-Y.-GefeN.Y.-Rechter-987x1024-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Like-Sea-Y.-GefeN.Y.-Rechter-987x1024-640x480.jpeg"
+           alt="Like Sea" loading="lazy">
+      <div class="gi-cap">Like Sea — Y. Gefen / Y. Rechter</div>
+    </div>
+    <div class="gi" data-cat="songs" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Sitting-in-San-Francisco-A.-Einstein-Sh.-Chanoch-1024x1008-.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Sitting-in-San-Francisco-A.-Einstein-Sh.-Chanoch-1024x1008-.jpeg"
+           alt="Sitting in San Francisco" loading="lazy">
+      <div class="gi-cap">Sitting in San Francisco — A. Einstein / Sh. Chanoch</div>
+    </div>
+    <div class="gi" data-cat="songs" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/The-Great-Heatwave-is-Over-M.-Ariel-Y.-Poliker-1024x984-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/The-Great-Heatwave-is-Over-M.-Ariel-Y.-Poliker-1024x984-640x480.jpeg"
+           alt="The Great Heatwave is Over" loading="lazy">
+      <div class="gi-cap">The Great Heatwave is Over — M. Ariel / Y. Poliker</div>
+    </div>
+    <div class="gi" data-cat="songs" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Thats-All-There-Is-E.-Mohar-Y.-Rechter-1024x1020-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Thats-All-There-Is-E.-Mohar-Y.-Rechter-1024x1020-640x480.jpeg"
+           alt="That's All There Is" loading="lazy">
+      <div class="gi-cap">That's All There Is — E. Mohar / Y. Rechter</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lbBox" onclick="lbOut(event)">
+  <div class="lb-inner">
+    <button class="lb-x" onclick="lbClose()">×</button>
+    <button class="lb-nav lb-p" onclick="lbNav(-1)">‹</button>
+    <img class="lb-img" id="lbImg" src="" alt="">
+    <button class="lb-nav lb-n" onclick="lbNav(1)">›</button>
+    <p class="lb-cap" id="lbCap"></p>
+    <p class="lb-num" id="lbNum"></p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Ron Levy. All rights reserved.</p>
+  <div class="fl">
+    <a href="index.html">Home</a>
+    <a href="jerusalem.html">Jerusalem</a>
+    <a href="landscape.html">Landscape</a>
+    <a href="interior.html">Interior</a>
+    <a href="people.html">People</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</footer>
+
+<script src="ron-levy.js"></script>
+<script>
+// Collection page: init hero cycling
+(function () {
+  const imgs = [...document.querySelectorAll('#heroRight img')];
+  if (imgs.length < 2) return;
+  let cur = 0;
+  imgs.forEach((img, i) => { img.style.opacity = i === 0 ? '1' : '0'; });
+  setInterval(() => {
+    imgs[cur].style.opacity = '0';
+    cur = (cur + 1) % imgs.length;
+    imgs[cur].style.opacity = '1';
+  }, 3500);
+})();
+
+// Override lbOpen to work on this page
+var lbItems = [], lbIdx = 0;
+function lbOpen(el) {
+  lbItems = [...document.querySelectorAll('.gi')].filter(e => e.style.display !== 'none');
+  lbIdx = lbItems.indexOf(el);
+  lbShow(lbIdx);
+  document.getElementById('lbBox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function lbOpenByIdx(i) { lbOpen(document.querySelectorAll('.gi')[i]); }
+function lbShow(i) {
+  const el = lbItems[i];
+  const img = el.querySelector('img');
+  document.getElementById('lbImg').src = img.dataset.full || img.src;
+  document.getElementById('lbCap').textContent = el.querySelector('.gi-cap')?.textContent || img.alt;
+  document.getElementById('lbNum').textContent = (i + 1) + ' of ' + lbItems.length;
+}
+function lbNav(d) { lbIdx = (lbIdx + d + lbItems.length) % lbItems.length; lbShow(lbIdx); }
+function lbClose() { document.getElementById('lbBox').classList.remove('open'); document.body.style.overflow = ''; }
+function lbOut(e) { if (e.target.id === 'lbBox') lbClose(); }
+document.addEventListener('keydown', e => {
+  if (!document.getElementById('lbBox').classList.contains('open')) return;
+  if (e.key === 'ArrowRight') lbNav(1);
+  if (e.key === 'ArrowLeft') lbNav(-1);
+  if (e.key === 'Escape') lbClose();
+});
+function filter(cat, btn) {
+  document.querySelectorAll('.tab').forEach(b => b.classList.remove('on'));
+  btn.classList.add('on');
+  document.querySelectorAll('.gi').forEach(el => {
+    el.style.display = (cat === 'all' || el.dataset.cat === cat) ? 'block' : 'none';
+  });
+}
+// Scroll reveal
+const obs2 = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); obs2.unobserve(e.target); } }), { threshold: 0.06 });
+document.querySelectorAll('.reveal').forEach(el => {
+  const r = el.getBoundingClientRect();
+  if (r.top < window.innerHeight) el.classList.add('vis'); else obs2.observe(el);
+});
+</script>
+</body>
+</html>
