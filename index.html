@@ -280,7 +280,7 @@ footer p { font-size: 12px; color: var(--mid-gray); }
     <p>As a musician who started studying cello at eight, he sought something entirely foreign. Within weeks he was painting on canvas — trees, clouds, water, reflections. Several hours every day.</p>
   </div>
   <div class="story-photo">
-    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/20250106_130034-1.jpg" alt="Emek Yizrael — one of Ron Levy's early landscapes">
+    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/20250106_130034-1-1024x1007-640x480.jpg" alt="Emek Yizrael — one of Ron Levy's early landscapes">
   </div>
 </div>
 
@@ -461,7 +461,7 @@ footer p { font-size: 12px; color: var(--mid-gray); }
   <p class="label">Get in touch</p>
   <h2 class="sec-title">Interested in a painting?</h2>
   <p class="sec-desc">For inquiries about availability, prints, or commissions, please reach out directly.</p>
-  <a class="cta-link" href="mailto:dronlevy@gmail.com" target="_blank">Contact Ron →</a>
+  <a class="cta-link" href="/cdn-cgi/l/email-protection#cbafb9a4a5a7aebdb28baca6aaa2a7e5a8a4a6" target="_blank">Contact Ron →</a>
 </section>
 
 <!-- FOOTER -->
@@ -489,7 +489,7 @@ footer p { font-size: 12px; color: var(--mid-gray); }
   </div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // Scroll reveal
 const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target); } }), { threshold: 0.1 });
 document.querySelectorAll('.rv').forEach(el => obs.observe(el));
@@ -537,11 +537,4 @@ function lbNav(d) { lbIdx = (lbIdx + d + lbItems.length) % lbItems.length; lbSho
 function lbClose() { document.getElementById('lbBox').classList.remove('open'); document.body.style.overflow = ''; }
 function lbOut(e) { if (e.target.id === 'lbBox') lbClose(); }
 document.addEventListener('keydown', e => {
-  if (!document.getElementById('lbBox').classList.contains('open')) return;
-  if (e.key === 'ArrowRight') lbNav(1);
-  if (e.key === 'ArrowLeft') lbNav(-1);
-  if (e.key === 'Escape') lbClose();
-});
-</script>
-</body>
-</html>
+  if (!document.getElementById('lbBox').classList.contains('open')) return
