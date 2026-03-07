@@ -165,11 +165,11 @@ footer p { font-size: 12px; color: var(--mid-gray); }
 .mob-x { position: absolute; top: 14px; right: 20px; background: none; border: none; font-size: 30px; cursor: pointer; color: var(--dark); }
 
 /* REVEAL */
-.rv { opacity: 0; transform: translateY(20px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
-.rv.vis { opacity: 1; transform: none; }
+.{ opacity: 0; transform: translateY(20px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
+..vis { opacity: 1; transform: none; }
 /* Fallback: if JS observer fails, show after 1s */
-.rv { animation: rv-fallback 0s 1s forwards; }
-@keyframes rv-fallback { to { opacity: 1; transform: none; } }
+.{ animation: -fallback 0s 1s forwards; }
+@keyframes -fallback { to { opacity: 1; transform: none; } }
 
 @keyframes fadeUp { to { opacity: 1; transform: none; } }
 
@@ -289,11 +289,11 @@ footer p { font-size: 12px; color: var(--mid-gray); }
 
 <!-- COLLECTIONS -->
 <section class="sec" id="collections" style="background:var(--white)">
-  <div class="sec-hd rv">
+  <div class="sec-hd ">
     <p class="label">Collections</p>
     <h2 class="sec-title">Five bodies of work</h2>
   </div>
-  <div class="coll-grid rv">
+  <div class="coll-grid ">
     <div class="cc" onclick="go('portraits')">
       <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Sergio-Celibidache-731x1024-640x480.jpeg" alt="Music" loading="lazy">
       <div class="cc-ov"><span class="cc-cat">Collection I</span><h3 class="cc-name">Music</h3><p class="cc-sub">Portraits · Duets · Instruments · Songs</p></div>
@@ -324,7 +324,7 @@ footer p { font-size: 12px; color: var(--mid-gray); }
 
 <!-- GALLERY -->
 <section class="sec gallery-sec" id="gallery">
-  <div class="gallery-top rv">
+  <div class="gallery-top ">
     <div><p class="label">Gallery</p><h2 class="sec-title">All works</h2></div>
     <div class="tabs">
       <button class="tab on" onclick="filter('all',this)">All</button>
@@ -442,11 +442,11 @@ footer p { font-size: 12px; color: var(--mid-gray); }
 <!-- ABOUT -->
 <section class="sec" id="about" style="background:var(--white)">
   <div class="about-inner">
-    <div class="about-img rv">
+    <div class="about-img ">
       <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/cropped-20250107_001818-scaled-1.jpg" alt="Ron Levy">
       <div class="about-badge"><strong>2020</strong><small>Painting began</small></div>
     </div>
-    <div class="rv">
+    <div class="">
       <p class="label">About Ron Levy</p>
       <h2 class="sec-title">My story,<br>not a biography</h2>
       <div class="sec-desc">
@@ -495,12 +495,12 @@ footer p { font-size: 12px; color: var(--mid-gray); }
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // Scroll reveal
 const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target); } }), { threshold: 0.05, rootMargin: '0px 0px -50px 0px' });
-  // Also immediately show any rv elements already in viewport on load
-  document.querySelectorAll('.rv').forEach(el => {
+  // Also immediately show any elements already in viewport on load
+  document.querySelectorAll('.').forEach(el => {
     const r = el.getBoundingClientRect();
     if (r.top < window.innerHeight) el.classList.add('vis');
   });
-document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+document.querySelectorAll('.').forEach(el => obs.observe(el));
 
 // Mobile menu
 function toggleMob() { document.getElementById('mobMenu').classList.toggle('open'); }
