@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interior — Ron Levy Paintings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="collection.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Ron Levy</a>
+  <ul class="nav-links">
+    <li><a href="music.html">Music</a></li>
+    <li><a href="jerusalem.html">My Jerusalem</a></li>
+    <li><a href="landscape.html">Landscape</a></li>
+    <li><a href="interior.html" class="active">Interior</a></li>
+    <li><a href="people.html">People</a></li>
+    <li><a href="index.html#about">About</a></li>
+  </ul>
+  <a href="index.html#contact" class="nav-cta">Contact</a>
+</nav>
+
+<section class="col-hero">
+  <div class="col-hero-left">
+    <p class="col-hero-eyebrow reveal">Collection IV — Interior</p>
+    <h1 class="col-hero-h1 reveal">Rooms<br>of <em>Light.</em></h1>
+    <p class="col-hero-desc reveal">Interiors filled with sunlight and shadow — windows opening onto gardens and sky, and quiet spaces without view. Each room a meditation on solitude and presence.</p>
+    <div class="col-hero-meta reveal">
+      <span>🪟 With View (VIII) · Without View</span>
+      <span>📅 2022–2025</span>
+    </div>
+  </div>
+  <div class="col-hero-right" id="heroRight">
+    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-1024x800-640x480.jpeg" alt="Interior with View I">
+    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-6-1024x802-640x480.jpeg" alt="Interior with View VI">
+    <img src="new%20painting/interiorwithview/Beyond%20the%20Window%20VII.jpg" alt="Beyond the Window VII">
+    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-without-view-1024x814-640x480.jpeg" alt="Interior without View">
+  </div>
+</section>
+
+<div class="banner-strip">
+  <div class="banner-strip-item" onclick="lbOpenByIdx(0)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-1024x800-640x480.jpeg" alt="With View I"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(4)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-5-1024x790-640x480.jpeg" alt="With View V"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(5)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-6-1024x802-640x480.jpeg" alt="With View VI"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(6)"><img src="new%20painting/interiorwithview/Beyond%20the%20Window%20VII.jpg" alt="Beyond the Window VII"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(8)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-without-view-1024x814-640x480.jpeg" alt="Without View"></div>
+</div>
+
+<section class="gallery-sec">
+  <div class="back-bar">
+    <a href="index.html" class="back-link">← All Collections</a>
+  </div>
+  <div class="gallery-header">
+    <h2 class="reveal">All Interior Works</h2>
+    <p class="reveal">With View · Without View</p>
+  </div>
+
+  <div class="tabs">
+    <button class="tab on" onclick="filter('all',this)">All</button>
+    <button class="tab" onclick="filter('withview',this)">With View</button>
+    <button class="tab" onclick="filter('withoutview',this)">Without View</button>
+  </div>
+
+  <div class="g-grid" id="gallery">
+
+    <!-- WITH VIEW (8) -->
+    <div class="gi" data-cat="withview" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-1024x800-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-1024x800-640x480.jpeg"
+           alt="Interior with View I" loading="lazy">
+      <div class="gi-cap">Interior with View I</div>
+    </div>
+    <div class="gi" data-cat="withview" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-2-1024x802-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-2-1024x802-640x480.jpeg"
+           alt="Interior with View II" loading="lazy">
+      <div class="gi-cap">Interior with View II</div>
+    </div>
+    <div class="gi" data-cat="withview" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-3-1024x869-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-3-1024x869-640x480.jpeg"
+           alt="Interior with View III" loading="lazy">
+      <div class="gi-cap">Interior with View III</div>
+    </div>
+    <div class="gi" data-cat="withview" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-4-1024x805-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-4-1024x805-640x480.jpeg"
+           alt="Interior with View IV" loading="lazy">
+      <div class="gi-cap">Interior with View IV</div>
+    </div>
+    <div class="gi" data-cat="withview" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-5-1024x790-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-5-1024x790-640x480.jpeg"
+           alt="Interior with View V" loading="lazy">
+      <div class="gi-cap">Interior with View V</div>
+    </div>
+    <div class="gi" data-cat="withview" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-6-1024x802-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-6-1024x802-640x480.jpeg"
+           alt="Interior with View VI" loading="lazy">
+      <div class="gi-cap">Interior with View VI</div>
+    </div>
+    <div class="gi" data-cat="withview" onclick="lbOpen(this)">
+      <img src="new%20painting/interiorwithview/Beyond%20the%20Window%20VII.jpg"
+           data-full="new%20painting/interiorwithview/Beyond%20the%20Window%20VII.jpg"
+           alt="Beyond the Window VII" loading="lazy">
+      <div class="gi-cap">Beyond the Window VII</div>
+    </div>
+    <div class="gi" data-cat="withview" onclick="lbOpen(this)">
+      <img src="new%20painting/interiorwithview/Beyond%20the%20Window%20VIII.jpg"
+           data-full="new%20painting/interiorwithview/Beyond%20the%20Window%20VIII.jpg"
+           alt="Beyond the Window VIII" loading="lazy">
+      <div class="gi-cap">Beyond the Window VIII</div>
+    </div>
+
+    <!-- WITHOUT VIEW (4) -->
+    <div class="gi" data-cat="withoutview" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-without-view-1024x814-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-without-view-1024x814-640x480.jpeg"
+           alt="Interior without View" loading="lazy">
+      <div class="gi-cap">Interior without View</div>
+    </div>
+    <div class="gi" data-cat="withoutview" onclick="lbOpen(this)">
+      <img src="new%20painting/interiorwithoutview/Living%20Room.png"
+           data-full="new%20painting/interiorwithoutview/Living%20Room.png"
+           alt="Living Room" loading="lazy">
+      <div class="gi-cap">Living Room</div>
+    </div>
+    <div class="gi" data-cat="withoutview" onclick="lbOpen(this)">
+      <img src="new%20painting/interiorwithoutview/Dining%20Room.jpg"
+           data-full="new%20painting/interiorwithoutview/Dining%20Room.jpg"
+           alt="Dining Room" loading="lazy">
+      <div class="gi-cap">Dining Room</div>
+    </div>
+    <div class="gi" data-cat="withoutview" onclick="lbOpen(this)">
+      <img src="new%20painting/interiorwithoutview/Kitchen.jpg"
+           data-full="new%20painting/interiorwithoutview/Kitchen.jpg"
+           alt="Kitchen" loading="lazy">
+      <div class="gi-cap">Kitchen</div>
+    </div>
+
+  </div>
+</section>
+
+<div class="lb" id="lbBox" onclick="lbOut(event)">
+  <div class="lb-inner">
+    <button class="lb-x" onclick="lbClose()">×</button>
+    <button class="lb-nav lb-p" onclick="lbNav(-1)">‹</button>
+    <img class="lb-img" id="lbImg" src="" alt="">
+    <button class="lb-nav lb-n" onclick="lbNav(1)">›</button>
+    <p class="lb-cap" id="lbCap"></p>
+    <p class="lb-num" id="lbNum"></p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Ron Levy. All rights reserved.</p>
+  <div class="fl">
+    <a href="index.html">Home</a>
+    <a href="music.html">Music</a>
+    <a href="jerusalem.html">Jerusalem</a>
+    <a href="landscape.html">Landscape</a>
+    <a href="people.html">People</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</footer>
+
+<script src="ron-levy.js"></script>
+<script>
+(function () { const imgs = [...document.querySelectorAll('#heroRight img')]; if (imgs.length < 2) return; let cur = 0; imgs.forEach((img, i) => { img.style.opacity = i === 0 ? '1' : '0'; }); setInterval(() => { imgs[cur].style.opacity = '0'; cur = (cur + 1) % imgs.length; imgs[cur].style.opacity = '1'; }, 3500); })();
+var lbItems = [], lbIdx = 0;
+function lbOpen(el) { lbItems = [...document.querySelectorAll('.gi')].filter(e => e.style.display !== 'none'); lbIdx = lbItems.indexOf(el); lbShow(lbIdx); document.getElementById('lbBox').classList.add('open'); document.body.style.overflow = 'hidden'; }
+function lbOpenByIdx(i) { lbOpen(document.querySelectorAll('.gi')[i]); }
+function lbShow(i) { const el = lbItems[i]; const img = el.querySelector('img'); document.getElementById('lbImg').src = img.dataset.full || img.src; document.getElementById('lbCap').textContent = el.querySelector('.gi-cap')?.textContent || img.alt; document.getElementById('lbNum').textContent = (i + 1) + ' of ' + lbItems.length; }
+function lbNav(d) { lbIdx = (lbIdx + d + lbItems.length) % lbItems.length; lbShow(lbIdx); }
+function lbClose() { document.getElementById('lbBox').classList.remove('open'); document.body.style.overflow = ''; }
+function lbOut(e) { if (e.target.id === 'lbBox') lbClose(); }
+document.addEventListener('keydown', e => { if (!document.getElementById('lbBox').classList.contains('open')) return; if (e.key === 'ArrowRight') lbNav(1); if (e.key === 'ArrowLeft') lbNav(-1); if (e.key === 'Escape') lbClose(); });
+function filter(cat, btn) { document.querySelectorAll('.tab').forEach(b => b.classList.remove('on')); btn.classList.add('on'); document.querySelectorAll('.gi').forEach(el => { el.style.display = (cat === 'all' || el.dataset.cat === cat) ? 'block' : 'none'; }); }
+const obs2 = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); obs2.unobserve(e.target); } }), { threshold: 0.06 });
+document.querySelectorAll('.reveal').forEach(el => { const r = el.getBoundingClientRect(); if (r.top < window.innerHeight) el.classList.add('vis'); else obs2.observe(el); });
+</script>
+</body>
+</html>

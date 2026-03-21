@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep:*)",
+      "Bash(wc:*)",
+      "Bash(ls \"/Users/yonilevy/Desktop/ron-levy-site/new painting/attachments\\(18\\)/\")",
+      "Bash(open:*)",
+      "Bash(find /Users/yonilevy/Desktop -maxdepth 4 -name *Paintings* -o -name *paintings*)",
+      "Read(//Users/yonilevy/**)",
+      "Bash(cp:*)",
+      "Bash(sed -i '' 's/Caf%C3%A9/Cafe/g' \"/Users/yonilevy/Desktop/ron-levy-site/index.html\" \"/Users/yonilevy/Desktop/ron-levy-site/people.html\")",
+      "Bash(sed -i '' \"s/— Ron Levy''s partner/— Maly Mayo-Levy/\" \"/Users/yonilevy/Desktop/ron-levy-site/index.html\")",
+      "Bash(__NEW_LINE_6cc6f9d1f7b940a8__ mv:*)",
+      "Bash(mv \"Like-Sea-Y.-GefenY.-Rechter-987x1024-640x480.jpeg\" \"Like-Sea-Y.-GefeN.Y.-Rechter-987x1024-640x480.jpeg\")",
+      "Bash(mv \"The-Great-Heatwave-is-Over-M.-Ariel-Y.-Poliker-1024x984-640.jpeg\" \"The-Great-Heatwave-is-Over-M.-Ariel-Y.-Poliker-1024x984-640x480.jpeg\")",
+      "Bash(__NEW_LINE_6cc6f9d1f7b940a8__ echo:*)"
+    ]
+  }
+}

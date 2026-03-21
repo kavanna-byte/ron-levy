@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Jerusalem — Ron Levy Paintings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="collection.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Ron Levy</a>
+  <ul class="nav-links">
+    <li><a href="music.html">Music</a></li>
+    <li><a href="jerusalem.html" class="active">My Jerusalem</a></li>
+    <li><a href="landscape.html">Landscape</a></li>
+    <li><a href="interior.html">Interior</a></li>
+    <li><a href="people.html">People</a></li>
+    <li><a href="index.html#about">About</a></li>
+  </ul>
+  <a href="index.html#contact" class="nav-cta">Contact</a>
+</nav>
+
+<section class="col-hero">
+  <div class="col-hero-left">
+    <p class="col-hero-eyebrow reveal">Collection II — Jerusalem</p>
+    <h1 class="col-hero-h1 reveal">My<br><em>Jerusalem.</em></h1>
+    <p class="col-hero-desc reveal">The city of memory — painted through the alleyways of childhood, the golden stones of Nachlaot, and the quiet courtyards of a city that never leaves you.</p>
+    <div class="col-hero-meta reveal">
+      <span>🕌 Childhood Memories · Nachlaot</span>
+      <span>📅 2022–2025</span>
+    </div>
+  </div>
+  <div class="col-hero-right" id="heroRight">
+    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.54.58-1005x1024-640x480.jpeg" alt="Talbiya Neighborhood">
+    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/20250824_210304-1024x1003-640x480.jpg" alt="Nachlaot I">
+    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.57.00-1024x755-640x480.jpeg" alt="YMCA Concert Hall">
+    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/IMG-20250123-WA0022-1004x1024-640x480.jpg" alt="Nachlaot II">
+    <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.58.30-1024x768-640x480.jpeg" alt="Mount Zion">
+  </div>
+</section>
+
+<!-- ANIMATED BANNER STRIP -->
+<div class="banner-strip">
+  <div class="banner-strip-item" onclick="lbOpenByIdx(0)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.54.58-1005x1024-640x480.jpeg" alt="Talbiya"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(1)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-11.00.16-1024x715-640x480.jpeg" alt="My Old School"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(2)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.58.30-1024x768-640x480.jpeg" alt="Mount Zion"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(3)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.53.23-1024x810-640x480.jpeg" alt="Yamin Moshe"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(4)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.57.00-1024x755-640x480.jpeg" alt="YMCA"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(5)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.57.52-1024x803-640x480.jpeg" alt="Old Train Station"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(8)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/20250824_210304-1024x1003-640x480.jpg" alt="Nachlaot I"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(9)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/IMG-20250123-WA0022-1004x1024-640x480.jpg" alt="Nachlaot II"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(10)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/IMG-20250123-WA0019-1024x1018-640x480.jpg" alt="Nachlaot III"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(11)"><img src="Ron%20Levy%20%E2%80%94%20Paintings_files/IMG-20250123-WA0014-1024x1024-640x480.jpg" alt="Nachlaot IV"></div>
+</div>
+
+<section class="gallery-sec">
+  <div class="back-bar">
+    <a href="index.html" class="back-link">← All Collections</a>
+  </div>
+  <div class="gallery-header">
+    <h2 class="reveal">All Jerusalem Works</h2>
+    <p class="reveal">Childhood Memories · Nachlaot Neighborhood</p>
+  </div>
+
+  <div class="tabs">
+    <button class="tab on" onclick="filter('all',this)">All</button>
+    <button class="tab" onclick="filter('childhood',this)">Childhood Memories</button>
+    <button class="tab" onclick="filter('nachlaot',this)">Nachlaot</button>
+  </div>
+
+  <div class="g-grid" id="gallery">
+
+    <!-- CHILDHOOD (8) -->
+    <div class="gi" data-cat="childhood" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.54.58-1005x1024-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.54.58-1005x1024-640x480.jpeg"
+           alt="Talbiya Neighborhood" loading="lazy">
+      <div class="gi-cap">Talbiya Neighborhood</div>
+    </div>
+    <div class="gi" data-cat="childhood" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-11.00.16-1024x715-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-11.00.16-1024x715-640x480.jpeg"
+           alt="My Old School" loading="lazy">
+      <div class="gi-cap">My Old School</div>
+    </div>
+    <div class="gi" data-cat="childhood" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.58.30-1024x768-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.58.30-1024x768-640x480.jpeg"
+           alt="Mount Zion" loading="lazy">
+      <div class="gi-cap">Mount Zion</div>
+    </div>
+    <div class="gi" data-cat="childhood" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.53.23-1024x810-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.53.23-1024x810-640x480.jpeg"
+           alt="Streets in Yamin Moshe" loading="lazy">
+      <div class="gi-cap">Streets in Yamin Moshe</div>
+    </div>
+    <div class="gi" data-cat="childhood" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.57.00-1024x755-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.57.00-1024x755-640x480.jpeg"
+           alt="YMCA Concert Hall" loading="lazy">
+      <div class="gi-cap">YMCA Concert Hall</div>
+    </div>
+    <div class="gi" data-cat="childhood" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.59.26-1-1024x768-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.59.26-1-1024x768-640x480.jpeg"
+           alt="Monastery of the Cross" loading="lazy">
+      <div class="gi-cap">Monastery of the Cross</div>
+    </div>
+    <div class="gi" data-cat="childhood" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.54.26-1024x792-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.54.26-1024x792-640x480.jpeg"
+           alt="Windmill, Yamin Moshe" loading="lazy">
+      <div class="gi-cap">Windmill, Yamin Moshe</div>
+    </div>
+    <div class="gi" data-cat="childhood" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.57.52-1024x803-640x480.jpeg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-08-26-at-10.57.52-1024x803-640x480.jpeg"
+           alt="Old Train Station" loading="lazy">
+      <div class="gi-cap">Old Train Station</div>
+    </div>
+
+    <!-- NACHLAOT (7) -->
+    <div class="gi" data-cat="nachlaot" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/20250824_210304-1024x1003-640x480.jpg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/20250824_210304-1024x1003-640x480.jpg"
+           alt="Nachlaot I" loading="lazy">
+      <div class="gi-cap">Nachlaot I</div>
+    </div>
+    <div class="gi" data-cat="nachlaot" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/IMG-20250123-WA0022-1004x1024-640x480.jpg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/IMG-20250123-WA0022-1004x1024-640x480.jpg"
+           alt="Nachlaot II" loading="lazy">
+      <div class="gi-cap">Nachlaot II</div>
+    </div>
+    <div class="gi" data-cat="nachlaot" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/IMG-20250123-WA0019-1024x1018-640x480.jpg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/IMG-20250123-WA0019-1024x1018-640x480.jpg"
+           alt="Nachlaot III" loading="lazy">
+      <div class="gi-cap">Nachlaot III</div>
+    </div>
+    <div class="gi" data-cat="nachlaot" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/IMG-20250123-WA0014-1024x1024-640x480.jpg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/IMG-20250123-WA0014-1024x1024-640x480.jpg"
+           alt="Nachlaot IV" loading="lazy">
+      <div class="gi-cap">Nachlaot IV</div>
+    </div>
+    <div class="gi" data-cat="nachlaot" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/IMG-20250123-WA0020-1011x1024-640x480.jpg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/IMG-20250123-WA0020-1011x1024-640x480.jpg"
+           alt="Nachlaot V" loading="lazy">
+      <div class="gi-cap">Nachlaot V</div>
+    </div>
+    <div class="gi" data-cat="nachlaot" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/IMG-20250123-WA0016-1024x1002-640x480.jpg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/IMG-20250123-WA0016-1024x1002-640x480.jpg"
+           alt="Nachlaot VI" loading="lazy">
+      <div class="gi-cap">Nachlaot VI</div>
+    </div>
+    <div class="gi" data-cat="nachlaot" onclick="lbOpen(this)">
+      <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/IMG-20250123-WA0012-1017x1024-640x480.jpg"
+           data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/IMG-20250123-WA0012-1017x1024-640x480.jpg"
+           alt="Nachlaot VII" loading="lazy">
+      <div class="gi-cap">Nachlaot VII</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lbBox" onclick="lbOut(event)">
+  <div class="lb-inner">
+    <button class="lb-x" onclick="lbClose()">×</button>
+    <button class="lb-nav lb-p" onclick="lbNav(-1)">‹</button>
+    <img class="lb-img" id="lbImg" src="" alt="">
+    <button class="lb-nav lb-n" onclick="lbNav(1)">›</button>
+    <p class="lb-cap" id="lbCap"></p>
+    <p class="lb-num" id="lbNum"></p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Ron Levy. All rights reserved.</p>
+  <div class="fl">
+    <a href="index.html">Home</a>
+    <a href="music.html">Music</a>
+    <a href="landscape.html">Landscape</a>
+    <a href="interior.html">Interior</a>
+    <a href="people.html">People</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</footer>
+
+<script src="ron-levy.js"></script>
+<script>
+(function () {
+  const imgs = [...document.querySelectorAll('#heroRight img')];
+  if (imgs.length < 2) return;
+  let cur = 0;
+  imgs.forEach((img, i) => { img.style.opacity = i === 0 ? '1' : '0'; });
+  setInterval(() => { imgs[cur].style.opacity = '0'; cur = (cur + 1) % imgs.length; imgs[cur].style.opacity = '1'; }, 3500);
+})();
+var lbItems = [], lbIdx = 0;
+function lbOpen(el) { lbItems = [...document.querySelectorAll('.gi')].filter(e => e.style.display !== 'none'); lbIdx = lbItems.indexOf(el); lbShow(lbIdx); document.getElementById('lbBox').classList.add('open'); document.body.style.overflow = 'hidden'; }
+function lbOpenByIdx(i) { lbOpen(document.querySelectorAll('.gi')[i]); }
+function lbShow(i) { const el = lbItems[i]; const img = el.querySelector('img'); document.getElementById('lbImg').src = img.dataset.full || img.src; document.getElementById('lbCap').textContent = el.querySelector('.gi-cap')?.textContent || img.alt; document.getElementById('lbNum').textContent = (i + 1) + ' of ' + lbItems.length; }
+function lbNav(d) { lbIdx = (lbIdx + d + lbItems.length) % lbItems.length; lbShow(lbIdx); }
+function lbClose() { document.getElementById('lbBox').classList.remove('open'); document.body.style.overflow = ''; }
+function lbOut(e) { if (e.target.id === 'lbBox') lbClose(); }
+document.addEventListener('keydown', e => { if (!document.getElementById('lbBox').classList.contains('open')) return; if (e.key === 'ArrowRight') lbNav(1); if (e.key === 'ArrowLeft') lbNav(-1); if (e.key === 'Escape') lbClose(); });
+function filter(cat, btn) { document.querySelectorAll('.tab').forEach(b => b.classList.remove('on')); btn.classList.add('on'); document.querySelectorAll('.gi').forEach(el => { el.style.display = (cat === 'all' || el.dataset.cat === cat) ? 'block' : 'none'; }); }
+const obs2 = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); obs2.unobserve(e.target); } }), { threshold: 0.06 });
+document.querySelectorAll('.reveal').forEach(el => { const r = el.getBoundingClientRect(); if (r.top < window.innerHeight) el.classList.add('vis'); else obs2.observe(el); });
+</script>
+</body>
+</html>
