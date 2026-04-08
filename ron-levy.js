@@ -77,15 +77,17 @@ function initReveal() {
 document.addEventListener('DOMContentLoaded', initReveal);
 
 // ── Auto-filter from URL ?cat= param (used by nav deep-links) ──
-document.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('load', function () {
   const cat = new URLSearchParams(window.location.search).get('cat');
   if (!cat) return;
   const tabs = [...document.querySelectorAll('.tab')];
-  const btn = tabs.find(b => {
-    const fn = b.getAttribute('onclick') || '';
-    return fn.includes("'" + cat + "'");
+  const btn = tabs.find(b => (b.getAttribute('onclick') || '').includes("'" + cat + "'"));
+  if (!btn) return;
+  tabs.forEach(b => b.classList.remove('on'));
+  btn.classList.add('on');
+  document.querySelectorAll('.gi').forEach(el => {
+    el.style.display = (el.dataset.cat === cat) ? 'block' : 'none';
   });
-  if (btn) btn.click();
 });
 
 // ── Hero Banner Cycling ────────────────────────────────────────
