@@ -10,11 +10,10 @@
   --mid-gray: #6e6e73;
   --accent: #0071e3;
   --nav-h: 52px;
+  --sans: -apple-system, 'Helvetica Neue', sans-serif;
 }
 html { scroll-behavior: smooth; }
 body { font-family: var(--sans); color: var(--dark); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
---sans: -apple-system, 'Helvetica Neue', sans-serif;
-body { font-family: -apple-system, 'Helvetica Neue', sans-serif; color: var(--dark); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
 
 /* ── NAV ── */
 nav {
