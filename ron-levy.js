@@ -76,6 +76,18 @@ function initReveal() {
 
 document.addEventListener('DOMContentLoaded', initReveal);
 
+// ── Auto-filter from URL ?cat= param (used by nav deep-links) ──
+document.addEventListener('DOMContentLoaded', function () {
+  const cat = new URLSearchParams(window.location.search).get('cat');
+  if (!cat) return;
+  const tabs = [...document.querySelectorAll('.tab')];
+  const btn = tabs.find(b => {
+    const fn = b.getAttribute('onclick') || '';
+    return fn.includes("'" + cat + "'");
+  });
+  if (btn) btn.click();
+});
+
 // ── Hero Banner Cycling ────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', function () {
   const heroRight = document.querySelector('.hero-right');
