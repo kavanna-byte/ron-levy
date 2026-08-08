@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tel Aviv–Yafo — Ron Levy Paintings</title>
+  <meta name="description" content="Ron Levy's Tel Aviv–Yafo collection: acrylic paintings of the Tel Aviv seafront and promenade, the Yarkon, tree-lined boulevards, and the old port of Jaffa. Israeli painter based in Timrat.">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"CollectionPage","name":"Tel Aviv–Yafo — Ron Levy Paintings","description":"Acrylic paintings of Tel Aviv–Yafo by Israeli painter Ron Levy. The series includes the Mediterranean seafront and promenade, Park HaYarkon, tree-lined boulevards, and the old fishing port of Jaffa.","url":"https://ronlevy.art/tel-aviv.html","creator":{"@type":"Person","name":"Ron Levy","url":"https://ronlevy.art"}}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="collection.css">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R94L45V05E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-R94L45V05E');
+  </script>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Ron Levy</a>
+  <ul class="nav-links">
+    <li><a href="music.html">Music</a></li>
+    <li><a href="jerusalem.html">My Jerusalem</a></li>
+    <li><a href="tel-aviv.html" class="active">Tel Aviv–Yafo</a></li>
+    <li><a href="landscape.html">Landscape</a></li>
+    <li><a href="interior.html">Interior</a></li>
+    <li><a href="people.html">People</a></li>
+    <li><a href="index.html#about">About</a></li>
+  </ul>
+  <a href="index.html#contact" class="nav-cta">Contact</a>
+</nav>
+
+<section class="col-hero">
+  <div class="col-hero-left">
+    <p class="col-hero-eyebrow reveal">Collection III — Tel Aviv–Yafo</p>
+    <h1 class="col-hero-h1 reveal">Tel Aviv–<br><em>Yafo.</em></h1>
+    <p class="col-hero-desc reveal">The White City by the sea — sunlit boulevards and café tables, the beachfront promenade, a family picnic by the Yarkon, and the old stone harbour of Jaffa where fishermen still mend their nets.</p>
+    <div class="col-hero-meta reveal">
+      <span>🌊 Seafront · Boulevards · Old Jaffa</span>
+      <span>📅 2025</span>
+    </div>
+  </div>
+  <div class="col-hero-right" id="heroRight">
+    <img src="new%20painting/urban/Beach.jpg" alt="Beach">
+    <img src="new%20painting/urban/Jaffa%20Port.jpg" alt="Jaffa Port">
+    <img src="new%20painting/urban/Boulevard.jpg" alt="Boulevard">
+    <img src="new%20painting/urban/Yarkon%20Park.jpg" alt="Yarkon Park">
+    <img src="new%20painting/urban/Promenade.jpg" alt="Promenade">
+  </div>
+</section>
+
+<!-- ANIMATED BANNER STRIP -->
+<div class="banner-strip">
+  <div class="banner-strip-item" onclick="lbOpenByIdx(0)"><img src="new%20painting/urban/Beach.jpg" alt="Beach"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(1)"><img src="new%20painting/urban/Promenade.jpg" alt="Promenade"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(2)"><img src="new%20painting/urban/Jaffa%20Port.jpg" alt="Jaffa Port"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(3)"><img src="new%20painting/urban/Boulevard.jpg" alt="Boulevard"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(4)"><img src="new%20painting/urban/Fountain%20Square.jpg" alt="Fountain Square"></div>
+  <div class="banner-strip-item" onclick="lbOpenByIdx(5)"><img src="new%20painting/urban/Yarkon%20Park.jpg" alt="Yarkon Park"></div>
+</div>
+
+<section class="gallery-sec">
+  <div class="back-bar">
+    <a href="index.html" class="back-link">← All Collections</a>
+  </div>
+  <div class="gallery-header">
+    <h2 class="reveal">All Tel Aviv–Yafo Works</h2>
+    <p class="reveal">Seafront · Boulevards · Old Jaffa</p>
+  </div>
+
+  <div class="tabs">
+    <button class="tab on" onclick="filter('all',this)">All</button>
+    <button class="tab" onclick="filter('seafront',this)">Seafront</button>
+    <button class="tab" onclick="filter('streets',this)">Streets & Parks</button>
+  </div>
+
+  <div class="g-grid" id="gallery">
+
+    <!-- SEAFRONT (3) -->
+    <div class="gi" data-cat="seafront" onclick="lbOpen(this)">
+      <img src="new%20painting/urban/Beach.jpg"
+           data-full="new%20painting/urban/Beach.jpg"
+           alt="Beach" loading="lazy">
+      <div class="gi-cap">Beach</div>
+    </div>
+    <div class="gi" data-cat="seafront" onclick="lbOpen(this)">
+      <img src="new%20painting/urban/Promenade.jpg"
+           data-full="new%20painting/urban/Promenade.jpg"
+           alt="Promenade" loading="lazy">
+      <div class="gi-cap">Promenade</div>
+    </div>
+    <div class="gi" data-cat="seafront" onclick="lbOpen(this)">
+      <img src="new%20painting/urban/Jaffa%20Port.jpg"
+           data-full="new%20painting/urban/Jaffa%20Port.jpg"
+           alt="Jaffa Port" loading="lazy">
+      <div class="gi-cap">Jaffa Port</div>
+    </div>
+
+    <!-- STREETS & PARKS (3) -->
+    <div class="gi" data-cat="streets" onclick="lbOpen(this)">
+      <img src="new%20painting/urban/Boulevard.jpg"
+           data-full="new%20painting/urban/Boulevard.jpg"
+           alt="Boulevard" loading="lazy">
+      <div class="gi-cap">Boulevard</div>
+    </div>
+    <div class="gi" data-cat="streets" onclick="lbOpen(this)">
+      <img src="new%20painting/urban/Fountain%20Square.jpg"
+           data-full="new%20painting/urban/Fountain%20Square.jpg"
+           alt="Fountain Square" loading="lazy">
+      <div class="gi-cap">Fountain Square</div>
+    </div>
+    <div class="gi" data-cat="streets" onclick="lbOpen(this)">
+      <img src="new%20painting/urban/Yarkon%20Park.jpg"
+           data-full="new%20painting/urban/Yarkon%20Park.jpg"
+           alt="Yarkon Park" loading="lazy">
+      <div class="gi-cap">Yarkon Park</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lbBox" onclick="lbOut(event)">
+  <div class="lb-inner">
+    <button class="lb-x" onclick="lbClose()">×</button>
+    <button class="lb-nav lb-p" onclick="lbNav(-1)">‹</button>
+    <img class="lb-img" id="lbImg" src="" alt="">
+    <button class="lb-nav lb-n" onclick="lbNav(1)">›</button>
+    <p class="lb-cap" id="lbCap"></p>
+    <p class="lb-num" id="lbNum"></p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Ron Levy. All rights reserved.</p>
+  <div class="fl">
+    <a href="index.html">Home</a>
+    <a href="music.html">Music</a>
+    <a href="jerusalem.html">Jerusalem</a>
+    <a href="landscape.html">Landscape</a>
+    <a href="interior.html">Interior</a>
+    <a href="people.html">People</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</footer>
+
+<script src="ron-levy.js"></script>
+<script>
+(function () {
+  const imgs = [...document.querySelectorAll('#heroRight img')];
+  if (imgs.length < 2) return;
+  let cur = 0;
+  imgs.forEach((img, i) => { img.style.opacity = i === 0 ? '1' : '0'; });
+  setInterval(() => { imgs[cur].style.opacity = '0'; cur = (cur + 1) % imgs.length; imgs[cur].style.opacity = '1'; }, 3500);
+})();
+var lbItems = [], lbIdx = 0;
+function lbOpen(el) { lbItems = [...document.querySelectorAll('.gi')].filter(e => e.style.display !== 'none'); lbIdx = lbItems.indexOf(el); lbShow(lbIdx); document.getElementById('lbBox').classList.add('open'); document.body.style.overflow = 'hidden'; }
+function lbOpenByIdx(i) { lbOpen(document.querySelectorAll('.gi')[i]); }
+function lbShow(i) { const el = lbItems[i]; const img = el.querySelector('img'); document.getElementById('lbImg').src = img.dataset.full || img.src; document.getElementById('lbCap').textContent = el.querySelector('.gi-cap')?.textContent || img.alt; document.getElementById('lbNum').textContent = (i + 1) + ' of ' + lbItems.length; }
+function lbNav(d) { lbIdx = (lbIdx + d + lbItems.length) % lbItems.length; lbShow(lbIdx); }
+function lbClose() { document.getElementById('lbBox').classList.remove('open'); document.body.style.overflow = ''; }
+function lbOut(e) { if (e.target.id === 'lbBox') lbClose(); }
+document.addEventListener('keydown', e => { if (!document.getElementById('lbBox').classList.contains('open')) return; if (e.key === 'ArrowRight') lbNav(1); if (e.key === 'ArrowLeft') lbNav(-1); if (e.key === 'Escape') lbClose(); });
+function filter(cat, btn) { document.querySelectorAll('.tab').forEach(b => b.classList.remove('on')); btn.classList.add('on'); document.querySelectorAll('.gi').forEach(el => { el.style.display = (cat === 'all' || el.dataset.cat === cat) ? 'block' : 'none'; }); }
+const obs2 = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); obs2.unobserve(e.target); } }), { threshold: 0.06 });
+document.querySelectorAll('.reveal').forEach(el => { const r = el.getBoundingClientRect(); if (r.top < window.innerHeight) el.classList.add('vis'); else obs2.observe(el); });
+</script>
+</body>
+</html>

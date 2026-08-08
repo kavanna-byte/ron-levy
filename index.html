@@ -131,6 +131,8 @@
     .cc:nth-child(3) { grid-column: span 3; aspect-ratio: 4/3; }
     .cc:nth-child(4) { grid-column: span 4; aspect-ratio: 4/3; }
     .cc:nth-child(5) { grid-column: span 3; aspect-ratio: 4/3; }
+    .cc:nth-child(6) { grid-column: span 12; aspect-ratio: 21/8; }
+    .cc:nth-child(6) img { object-position: center 32%; }
     .cc-ov { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.12) 60%, transparent 100%); }
     .cc-cat { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 4px; }
     .cc-name { font-family: var(--serif); font-size: 24px; color: white; line-height: 1.2; }
@@ -202,13 +204,14 @@
       .about { grid-template-columns: 1fr; }
       .g-grid { columns: 3; }
       .coll-grid { grid-template-columns: 1fr 1fr; gap: 4px; }
-      .cc:nth-child(1), .cc:nth-child(2), .cc:nth-child(3), .cc:nth-child(4), .cc:nth-child(5) {
+      .cc:nth-child(1), .cc:nth-child(2), .cc:nth-child(3), .cc:nth-child(4), .cc:nth-child(5), .cc:nth-child(6) {
         grid-column: span 1;
         grid-row: span 1;
         min-height: 0;
         aspect-ratio: 3/4;
       }
       .cc:nth-child(1) { grid-column: span 2; aspect-ratio: 16/7; }
+      .cc:nth-child(6) { grid-column: span 2; aspect-ratio: 16/7; }
     }
     @media (max-width: 768px) {
       nav .nav-links, nav .nav-cta { display: none; }
@@ -221,7 +224,7 @@
       .gi { min-height: 200px; }
       .gi img { min-height: 200px; }
       .coll-grid { grid-template-columns: 1fr; }
-      .cc:nth-child(1), .cc:nth-child(2), .cc:nth-child(3), .cc:nth-child(4), .cc:nth-child(5) {
+      .cc:nth-child(1), .cc:nth-child(2), .cc:nth-child(3), .cc:nth-child(4), .cc:nth-child(5), .cc:nth-child(6) {
         grid-column: span 1;
         grid-row: span 1;
         min-height: 0;
@@ -261,6 +264,13 @@
       </div>
     </li>
     <li class="has-sub">
+      <a href="tel-aviv.html">Tel Aviv–Yafo ▾</a>
+      <div class="sub-menu">
+        <a href="tel-aviv.html?cat=seafront">Seafront</a>
+        <a href="tel-aviv.html?cat=streets">Streets &amp; Parks</a>
+      </div>
+    </li>
+    <li class="has-sub">
       <a href="landscape.html">Landscape ▾</a>
       <div class="sub-menu">
         <a href="landscape.html?cat=rural">Rural Landscape</a>
@@ -289,6 +299,7 @@
   <a href="#gallery" onclick="go('all');toggleMob()">All Works</a>
   <a href="music.html" onclick="toggleMob()">Music</a>
   <a href="jerusalem.html" onclick="toggleMob()">Jerusalem</a>
+  <a href="tel-aviv.html" onclick="toggleMob()">Tel Aviv–Yafo</a>
   <a href="landscape.html" onclick="toggleMob()">Landscape</a>
   <a href="interior.html" onclick="toggleMob()">Interior</a>
   <a href="people.html" onclick="toggleMob()">People</a>
@@ -344,7 +355,7 @@
 <section class="sec sec-id" id="collections" style="background:var(--off-white)">
   <div class="sec-hd">
     <p class="label">Collections</p>
-    <h2 class="sec-title">Five bodies of work</h2>
+    <h2 class="sec-title">Six bodies of work</h2>
   </div>
   <div class="coll-grid">
     <div class="cc" onclick="window.location='music.html'">
@@ -367,11 +378,21 @@
       </div>
       <div class="cc-arrow">↗</div>
     </div>
+    <div class="cc" onclick="window.location='tel-aviv.html'">
+      <img src="new%20painting/urban/Jaffa%20Port.jpg" alt="Tel Aviv–Yafo" loading="lazy">
+      <div class="cc-ov"></div>
+      <div style="position:absolute;bottom:20px;left:20px">
+        <div class="cc-cat">Collection III</div>
+        <div class="cc-name">Tel Aviv–Yafo</div>
+        <div class="cc-sub">Seafront · Boulevards · Old Jaffa</div>
+      </div>
+      <div class="cc-arrow">↗</div>
+    </div>
     <div class="cc" onclick="window.location='landscape.html'">
       <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/20250106_224906.jpg" alt="Landscape" loading="lazy">
       <div class="cc-ov"></div>
       <div style="position:absolute;bottom:20px;left:20px">
-        <div class="cc-cat">Collection III</div>
+        <div class="cc-cat">Collection IV</div>
         <div class="cc-name">Landscape</div>
         <div class="cc-sub">Rural · Emek · Galilee · Urban</div>
       </div>
@@ -381,7 +402,7 @@
       <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/Interior-with-view-5-1024x790-640x480.jpeg" alt="Interior" loading="lazy">
       <div class="cc-ov"></div>
       <div style="position:absolute;bottom:20px;left:20px">
-        <div class="cc-cat">Collection IV</div>
+        <div class="cc-cat">Collection V</div>
         <div class="cc-name">Interior</div>
         <div class="cc-sub">With view · Without view</div>
       </div>
@@ -391,7 +412,7 @@
       <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/WhatsApp-Image-2025-09-27-at-22.52.55-4-722x1024-640x480.jpeg" alt="People" loading="lazy">
       <div class="cc-ov"></div>
       <div style="position:absolute;bottom:20px;left:20px">
-        <div class="cc-cat">Collection V</div>
+        <div class="cc-cat">Collection VI</div>
         <div class="cc-name">People</div>
         <div class="cc-sub">The human figure</div>
       </div>
@@ -415,6 +436,7 @@
     <button class="tab"            onclick="filter('duets',this)">Duets</button>
     <button class="tab"            onclick="filter('songs',this)">Songs</button>
     <button class="tab"            onclick="filter('jerusalem',this)">Jerusalem</button>
+    <button class="tab"            onclick="filter('telaviv',this)">Tel Aviv</button>
     <button class="tab"            onclick="filter('landscape',this)">Landscape</button>
     <button class="tab"            onclick="filter('interior',this)">Interior</button>
     <button class="tab"            onclick="filter('people',this)">People</button>
@@ -602,7 +624,7 @@
       <div class="gi-cap">Sea of Galilee</div>
     </div>
 
-    <!-- ── LANDSCAPE — URBAN (11) ── -->
+    <!-- ── LANDSCAPE — URBAN (5) ── -->
     <div class="gi" data-cat="landscape" onclick="lbOpen(this)">
       <img src="Ron%20Levy%20%E2%80%94%20Paintings_files/20250106_224723-1-1024x1011-640x480.jpg" data-full="Ron%20Levy%20%E2%80%94%20Paintings_files/20250106_224723-1-1024x1011-640x480.jpg" alt="Urban Landscape" loading="lazy">
       <div class="gi-cap">Urban Landscape</div>
@@ -610,22 +632,6 @@
     <div class="gi" data-cat="landscape" onclick="lbOpen(this)">
       <img src="new%20painting/urban/Market.jpg" data-full="new%20painting/urban/Market.jpg" alt="Market" loading="lazy">
       <div class="gi-cap">Market</div>
-    </div>
-    <div class="gi" data-cat="landscape" onclick="lbOpen(this)">
-      <img src="new%20painting/urban/Beach.jpg" data-full="new%20painting/urban/Beach.jpg" alt="Beach" loading="lazy">
-      <div class="gi-cap">Beach</div>
-    </div>
-    <div class="gi" data-cat="landscape" onclick="lbOpen(this)">
-      <img src="new%20painting/urban/Yarkon%20Park.jpg" data-full="new%20painting/urban/Yarkon%20Park.jpg" alt="Yarkon Park" loading="lazy">
-      <div class="gi-cap">Yarkon Park</div>
-    </div>
-    <div class="gi" data-cat="landscape" onclick="lbOpen(this)">
-      <img src="new%20painting/urban/Fountain%20Square.jpg" data-full="new%20painting/urban/Fountain%20Square.jpg" alt="Fountain Square" loading="lazy">
-      <div class="gi-cap">Fountain Square</div>
-    </div>
-    <div class="gi" data-cat="landscape" onclick="lbOpen(this)">
-      <img src="new%20painting/urban/Jaffa%20Port.jpg" data-full="new%20painting/urban/Jaffa%20Port.jpg" alt="Jaffa Port" loading="lazy">
-      <div class="gi-cap">Jaffa Port</div>
     </div>
     <div class="gi" data-cat="landscape" onclick="lbOpen(this)">
       <img src="new%20painting/urban/At%20the%20Neighborhood%20Caf%C3%A9%20I.jpg" data-full="new%20painting/urban/At%20the%20Neighborhood%20Caf%C3%A9%20I.jpg" alt="At the Neighborhood Café I" loading="lazy">
@@ -639,13 +645,31 @@
       <img src="new%20painting/urban/At%20the%20Neighborhood%20Caf%C3%A9%20III.jpg" data-full="new%20painting/urban/At%20the%20Neighborhood%20Caf%C3%A9%20III.jpg" alt="At the Neighborhood Café III" loading="lazy">
       <div class="gi-cap">At the Neighborhood Café III</div>
     </div>
-    <div class="gi" data-cat="landscape" onclick="lbOpen(this)">
+
+    <!-- ── TEL AVIV–YAFO (6) ── -->
+    <div class="gi" data-cat="telaviv" onclick="lbOpen(this)">
+      <img src="new%20painting/urban/Beach.jpg" data-full="new%20painting/urban/Beach.jpg" alt="Beach" loading="lazy">
+      <div class="gi-cap">Beach</div>
+    </div>
+    <div class="gi" data-cat="telaviv" onclick="lbOpen(this)">
+      <img src="new%20painting/urban/Promenade.jpg" data-full="new%20painting/urban/Promenade.jpg" alt="Promenade" loading="lazy">
+      <div class="gi-cap">Promenade</div>
+    </div>
+    <div class="gi" data-cat="telaviv" onclick="lbOpen(this)">
+      <img src="new%20painting/urban/Jaffa%20Port.jpg" data-full="new%20painting/urban/Jaffa%20Port.jpg" alt="Jaffa Port" loading="lazy">
+      <div class="gi-cap">Jaffa Port</div>
+    </div>
+    <div class="gi" data-cat="telaviv" onclick="lbOpen(this)">
       <img src="new%20painting/urban/Boulevard.jpg" data-full="new%20painting/urban/Boulevard.jpg" alt="Boulevard" loading="lazy">
       <div class="gi-cap">Boulevard</div>
     </div>
-    <div class="gi" data-cat="landscape" onclick="lbOpen(this)">
-      <img src="new%20painting/urban/Promenade.jpg" data-full="new%20painting/urban/Promenade.jpg" alt="Promenade" loading="lazy">
-      <div class="gi-cap">Promenade</div>
+    <div class="gi" data-cat="telaviv" onclick="lbOpen(this)">
+      <img src="new%20painting/urban/Fountain%20Square.jpg" data-full="new%20painting/urban/Fountain%20Square.jpg" alt="Fountain Square" loading="lazy">
+      <div class="gi-cap">Fountain Square</div>
+    </div>
+    <div class="gi" data-cat="telaviv" onclick="lbOpen(this)">
+      <img src="new%20painting/urban/Yarkon%20Park.jpg" data-full="new%20painting/urban/Yarkon%20Park.jpg" alt="Yarkon Park" loading="lazy">
+      <div class="gi-cap">Yarkon Park</div>
     </div>
 
     <!-- ── INTERIOR — WITH VIEW (8) ── -->
@@ -783,6 +807,7 @@
   <div class="fl">
     <a href="music.html">Music</a>
     <a href="jerusalem.html">Jerusalem</a>
+    <a href="tel-aviv.html">Tel Aviv</a>
     <a href="landscape.html">Landscape</a>
     <a href="interior.html">Interior</a>
     <a href="people.html">People</a>

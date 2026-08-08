@@ -16,6 +16,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ronlevy.art/tel-aviv.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ronlevy.art/landscape.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
